@@ -33,6 +33,7 @@
             this.btnstockout = new System.Windows.Forms.Button();
             this.btnreport = new System.Windows.Forms.Button();
             this.btnuser = new System.Windows.Forms.Button();
+            this.lblwid = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnproduct
@@ -85,11 +86,21 @@
             this.btnuser.UseVisualStyleBackColor = true;
             this.btnuser.Click += new System.EventHandler(this.btnuser_Click);
             // 
+            // lblwid
+            // 
+            this.lblwid.AutoSize = true;
+            this.lblwid.Location = new System.Drawing.Point(13, 14);
+            this.lblwid.Name = "lblwid";
+            this.lblwid.Size = new System.Drawing.Size(23, 13);
+            this.lblwid.TabIndex = 5;
+            this.lblwid.Text = "wid";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(243, 162);
+            this.Controls.Add(this.lblwid);
             this.Controls.Add(this.btnuser);
             this.Controls.Add(this.btnreport);
             this.Controls.Add(this.btnstockout);
@@ -99,6 +110,7 @@
             this.Text = "Menu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,5 +121,6 @@
         private System.Windows.Forms.Button btnstockout;
         private System.Windows.Forms.Button btnreport;
         private System.Windows.Forms.Button btnuser;
+        private System.Windows.Forms.Label lblwid;
     }
 }

@@ -19,7 +19,7 @@ namespace WH_Inventory
 
         private void Product_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Menu menu = new Menu();
+            Menu menu = new Menu("a");
             this.Hide();
             menu.ShowDialog();
         }
